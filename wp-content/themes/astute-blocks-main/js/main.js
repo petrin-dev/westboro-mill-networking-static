@@ -11,6 +11,7 @@ if (emailField) {
         if (isValidEmail) {
             emailError.style.display = 'none'
             submitButton.disabled = 'false'
+            submitButton.removeAttribute('disabled')
         } else {
             emailError.style.display = 'inline-block'
             submitButton.disabled = 'true'
